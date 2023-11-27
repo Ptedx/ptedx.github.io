@@ -1,0 +1,314 @@
+/*Animations*/
+@keyframes fadeInRight {
+    0%{
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.fadeInRight{
+    animation: fadeInRight 2s forwards;
+}
+
+@keyframes fadeInLeft {
+    0%{
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.fadeInLeft{
+    animation: fadeInLeft 2.5s forwards;
+}
+
+@keyframes fadeInBottom {
+    0%{
+        transform: translateY(70px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.fadeInBottom{
+    animation: fadeInBottom 2s forwards;
+}
+
+@keyframes light{
+    0%{
+        transform: translate(-300px,-15.5%) rotate(45deg);
+        left: -20px;
+    }
+    80%{
+        left: calc(100% + 60px);
+        transform: translate(calc(100% + 200px),-15.5%) rotate(45deg);
+    }
+    100%{
+        left: calc(100% + 60px);
+        transform: translate(calc(100% + 200px),-15.5%) rotate(45deg);
+    }
+}
+.light, .light-m{
+    animation: light 2.5s infinite forwards;
+    width: 20px;
+    height: 900px;
+    background-color: rgba(255, 255, 255, 0.425);
+    position: absolute;
+}
+.light-m{
+    animation: light 2.8s infinite forwards;
+}
+/*Patterns*/
+.observeL,.observeR,.observeB{
+    opacity: 0;
+}
+
+.a-bsolut{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.mg-20{
+    margin-bottom: 20px;
+}
+
+.line{
+    height: 5px;
+    width: 170px;
+    background-color: #ffbd4a;
+    margin-bottom: 15px;
+}
+@media (max-width:768px) {
+    .line{
+        width: 100%;
+    }
+}
+
+.button-main{
+    background-color: #ffbd4a;
+    border: 2px solid #ffbd4a;
+}
+.button-main:hover *{
+    background-color: white;
+    color: #ffbd4a;
+}
+
+.button-light, .button-main, .button-reverse{
+    background-color: #ffe46e;
+    color: rgb(22, 22, 22) !important;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.button-light:hover, .button-main:hover, .button-reverse:hover{
+    scale: 105%;
+}
+
+.button-main, .button-reverse{
+    background-color: #ffbd4a;
+    border: 2px solid #ffbd4a;
+    width: 45% !important;
+}
+
+.button-light a,.button-main a,.button-reverse a{
+    width: 100% !important;
+    height: 100% !important;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.button-main a:hover{
+    background-color: white;
+    color: #ffbd4a;
+    transition: 0.5s;
+}
+
+.button-reverse a{
+    background-color: white;
+    color: #ffbd4a ;
+}
+
+.button-reverse a:hover{
+    background-color: #ffbd4a;
+    color: rgb(22, 22, 22);
+    transition: 0.5s;
+}
+
+.button-light a:hover{
+    text-decoration: none;
+    color: rgb(22, 22, 22);
+}
+
+.d-flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h-100vh{
+    height: 100vh !important;
+}
+
+
+/*Navbar*/
+.menu{
+    height: 88px;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.box-shadow{
+    box-shadow: 0 5px 5px 1px rgba(66, 66, 66, 0.205);
+}
+
+.menu-options{
+    justify-content: end;
+    padding-right: 15px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+}
+.menu-options a:hover{
+    color: #ffbd4a;
+    transform: scale(105%);
+}
+
+.main-section{
+    padding-top: 88px;
+}
+
+/*About me Section*/
+.about-me{
+    padding-top: 120px;
+    padding-bottom: 130px;
+}
+
+.about-item{
+    text-align: center;
+    padding: 0;
+}
+@media (max-width:768px) {
+    .about-me{
+        flex-direction: column;
+    }
+    .about-item{
+        width: 100%;
+    }
+}
+
+/*Knowledges Section*/
+.knowledges{
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+.knowledges-card{
+    padding: 60px 80px;
+    color: white;
+    margin-bottom: 30px;
+    position: relative;
+    height: 100%;
+    cursor: default;
+}
+
+.know-item-1,.know-item-2,.know-item-3,.know-item-4{
+    box-sizing: content-box !important;
+    border-radius: 10px;
+}
+
+.know-item-1{
+    background-image: -webkit-linear-gradient(-48deg, #24e2fe 0%, #24b0fe 54%, #237efd 100%);
+}
+.know-item-2{
+    background-image: -webkit-linear-gradient(-48deg, rgba(255,211,36,0.99) 0%, rgba(254,187,36,0.99) 54%, rgba(253,163,35,0.99) 100%);
+}
+.know-item-3{
+    background-image: -webkit-linear-gradient(-48deg, rgba(248,47,160,0.99) 0%, rgba(214,54,208,0.99) 54%, rgba(180,61,255,0.99) 100%);
+}
+.know-item-4{
+    background-image: -webkit-linear-gradient(-48deg, rgba(0,188,128,0.99) 0%, rgba(2,204,71,0.99) 54%, rgba(3,220,13,0.99) 100%);
+}
+
+.know-item-1,
+.know-item-2,
+.know-item-3,
+.know-item-4 {
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: absolute;
+    width: 95%; 
+    height: 100%; 
+    top: 0;
+}
+
+@media (min-width:768px) {
+    .know-item-1,
+    .know-item-2,
+    .know-item-3,
+    .know-item-4 {
+        width: 90%;
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content: space-between !important;
+    }
+}
+
+@media (min-width:992px) {
+    .know-item-1,
+    .know-item-2,
+    .know-item-3,
+    .know-item-4 {
+        width: 80%;
+        padding-left: 30px;
+        padding-right: 40px;
+        justify-content: space-between !important;
+    }
+}
+
+/*Projects section*/
+.projects{
+    padding-top: 120px;
+    padding-bottom: 150px;
+}
+.project{
+    overflow: hidden;
+}
+
+.project img{
+    border-radius: 5px;
+}
+
+/*Contact section*/
+.contact{
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+.contact a:hover{
+    color: #ffbd4a !important;
+    text-decoration: none;
+}
+
+/*Work Experiences section*/
+.experiences{
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
