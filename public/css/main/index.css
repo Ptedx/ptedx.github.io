@@ -71,6 +71,7 @@
 }
 .light, .light-m{
     animation: light 2.5s infinite forwards;
+    -webkit-animation: light 2.5s infinite forwards;
     width: 45px;
     height: 900px;
     background-color: rgba(255, 255, 255, 0.425);
@@ -78,6 +79,7 @@
 }
 .light-m{
     animation: light 2.8s infinite forwards;
+    -webkit-animation: light 2.8s infinite forwards;
 }
 /*Patterns*/
 .observeL,.observeR,.observeB{
