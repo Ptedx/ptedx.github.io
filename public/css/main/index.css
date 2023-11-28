@@ -44,29 +44,29 @@
 @keyframes light{
     0%{
         transform: translate(-330px,-15.8%) rotate(45deg);
-        left: -20px;
+        left: -50px;
     }
     80%{
         left: calc(100% + 60px);
-        transform: translate(calc(100% + 200px),-15.8%) rotate(45deg);
+        transform: translate(calc(100% + 220px),-15.8%) rotate(45deg);
     }
     100%{
         left: calc(100% + 60px);
-        transform: translate(calc(100% + 200px),-15.8%) rotate(45deg);
+        transform: translate(calc(100% + 220px),-15.8%) rotate(45deg);
     }
 }
 @-webkit-keyframes light{
     0%{
         -webkit-transform: translate(-330px,-15.8%) rotate(45deg);
-        left: -20px;
+        left: -50px;
     }
     80%{
         left: calc(100% + 60px);
-        -webkit-transform: translate(calc(100% + 200px),-15.8%) rotate(45deg);
+        -webkit-transform: translate(calc(100% + 220px),-15.8%) rotate(45deg);
     }
     100%{
         left: calc(100% + 60px);
-        -webkit-transform: translate(calc(100% + 200px),-15.8%) rotate(45deg);
+        -webkit-transform: translate(calc(100% + 220px),-15.8%) rotate(45deg);
     }
 }
 .light, .light-m{
