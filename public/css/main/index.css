@@ -1,85 +1,30 @@
-/*Animations*/
-@keyframes fadeInRight {
+@keyframes move {
     0%{
-        opacity: 0;
-        transform: translateX(30px);
+        left:-100px
     }
     100%{
-        opacity: 1;
-        transform: translateX(0px);
+        left: calc(100% + 120px)
     }
 }
-.fadeInRight{
-    animation: fadeInRight 2s forwards;
-}
-
-@keyframes fadeInLeft {
+@-webkit-keyframes move {
     0%{
-        transform: translateX(-30px);
-        opacity: 0;
+        left:-100px
     }
     100%{
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-.fadeInLeft{
-    animation: fadeInLeft 2.5s forwards;
-}
-
-@keyframes fadeInBottom {
-    0%{
-        transform: translateY(70px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-.fadeInBottom{
-    animation: fadeInBottom 2s forwards;
-}
-
-@keyframes light{
-    0%{
-        transform: translate(-330px,-15.8%) rotate(45deg);
-        left: -50px;
-    }
-    80%{
-        left: calc(100% + 60px);
-        transform: translate(calc(100% + 220px),-15.8%) rotate(45deg);
-    }
-    100%{
-        left: calc(100% + 60px);
-        transform: translate(calc(100% + 220px),-15.8%) rotate(45deg);
-    }
-}
-@-webkit-keyframes light{
-    0%{
-        -webkit-transform: translate(-330px,-15.8%) rotate(45deg);
-        left: -50px;
-    }
-    80%{
-        left: calc(100% + 60px);
-        -webkit-transform: translate(calc(100% + 220px),-15.8%) rotate(45deg);
-    }
-    100%{
-        left: calc(100% + 60px);
-        -webkit-transform: translate(calc(100% + 220px),-15.8%) rotate(45deg);
+        left: calc(100% + 120px)
     }
 }
 .light, .light-m{
-    -webkit-animation: light 2.5s infinite forwards;
-    animation: light 2.5s infinite forwards;
+    -webkit-animation: move 1.5s forwards infinite;
+    animation: move 1.5s forwards infinite;
     width: 45px;
-    height: 900px;
+    height: 250%;
+    transform: rotate(45deg);
     background-color: rgba(255, 255, 255, 0.425);
     position: absolute;
 }
 .light-m{
-    animation: light 2.8s infinite forwards;
-    -webkit-animation: light 2.8s infinite forwards;
+    top:-100%;
 }
 /*Patterns*/
 .observeL,.observeR,.observeB{
