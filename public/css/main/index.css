@@ -2,6 +2,9 @@
     0%{
         left:-100px
     }
+    50%{
+        left: calc(100% + 120px)
+    }
     100%{
         left: calc(100% + 120px)
     }
@@ -10,15 +13,18 @@
     0%{
         left:-100px
     }
+    50%{
+        left: calc(100% + 120px);
+    }
     100%{
         left: calc(100% + 120px)
     }
 }
 .light, .light-m{
-    -webkit-animation: move 1.5s forwards infinite;
-    animation: move 1.5s forwards infinite;
+    -webkit-animation: move 3s forwards infinite;
+    animation: move 3s forwards infinite;
     width: 45px;
-    height: 250%;
+    height: 255%;
     transform: rotate(45deg);
     background-color: rgba(255, 255, 255, 0.425);
     position: absolute;
