@@ -80,27 +80,3 @@ document.addEventListener('scroll',()=>{
     }
     ticking = true
 })
-
-/*Light*/
-/*document.addEventListener('DOMContentLoaded',()=>{
-    const light = document.querySelectorAll(".light")
-    const lightm = document.querySelectorAll(".light-m")
-    light.forEach((Selected)=>{
-        gsap.fromTo(Selected,{
-            x:-100
-        },{
-            xPercent: 100,
-            duration: 1,
-            repeat:-1
-        })
-    })
-    lightm.forEach((selected=>{
-        gsap.fromTo(selected,{
-            x:-100
-        },{
-            x: "500%",
-            duration: 1,
-            repeat:-1
-        })
-    }))
-})*/
