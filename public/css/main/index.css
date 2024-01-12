@@ -50,11 +50,14 @@
     margin-bottom: 20px;
 }
 
-.line{
+.line, .linefull{
     height: 5px;
     width: 170px;
     background-color: #ffbd4a;
     margin-bottom: 15px;
+}
+.linefull{
+    width: 100%;
 }
 @media (max-width:768px) {
     .line{
@@ -262,6 +265,38 @@
 
 .project img{
     border-radius: 5px;
+}
+
+/*experiences section*/
+.job{
+    text-align: center;
+    border-radius: 5px;
+    height: 100%;
+}
+.job:hover{
+    background-color: #ffbd4a;
+    transition: 1s;
+}
+
+.job ul li{
+    font-size: 20px;
+    margin-bottom: 5px;
+    list-style-position: inside;  
+}
+.job:hover .linefull{
+    background-color: white;
+}
+.joblist{
+    margin-top: 20px;
+}
+
+@media (max-width:768px) {
+    .joblist{
+        flex-direction: column;
+    }
+    .job{
+        margin-bottom: 20px;
+    }
 }
 
 /*Contact section*/
